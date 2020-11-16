@@ -1,0 +1,36 @@
+header {
+    .title {
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        font-weight: 550;
+        a {
+            color: var(--dark);
+        }
+        @media (max-width: 576px) {
+            h2 {
+                font-size: 25px;
+            }
+        }
+    }
+    .headerCon {
+        form {
+            input {
+                margin-right: 10px;
+            }
+        }
+        .headerNav {
+            @media (min-width: 768px) {
+                display: flex;
+                justify-content: space-between;
+            }
+            @media (min-width: 992px) {
+                ul {
+                    li {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

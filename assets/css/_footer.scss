@@ -1,0 +1,44 @@
+footer {
+    background-color: var(--dark);
+    color: var(--light);
+    .footer-wrapper {
+        padding-top: 10px;
+        .footer-item {
+            padding-bottom: 10px;
+        }
+        a {
+            color: var(--light);
+        }
+        display: block;
+        .about {
+            flex: 1;
+        }
+        .blog {
+            flex: 1;
+            ul {
+                padding: 0;
+                list-style: none;
+            }
+        }
+        .sns {
+            flex: 1;
+        }
+    }
+    @media (min-width: 768px) {
+        .footer-wrapper {
+            display: flex;
+        }
+        .footer-item {
+            padding-left: 10px;
+        }
+        .footer-item:first-child {
+            padding: 0;
+        }
+    }
+    .copyRight {
+        margin-top: 20px;
+        border-top: 1px solid var(--light);
+        padding: 10px 0;
+        text-align: center;
+    }
+}
