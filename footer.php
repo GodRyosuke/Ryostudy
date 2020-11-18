@@ -18,7 +18,9 @@
           </div>
           <div class="sns footer-item">
             <h2>TWITTER</h2>
-            twitter 埋め込み
+            <div class="twitter-wrap">
+              <a class="twitter-timeline" href="https://twitter.com/BfO08TneGtGy5Fm?ref_src=twsrc%5Etfw" data-height="300">Tweets by BfO08TneGtGy5Fm</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
           </div>
         </div>
       </div>

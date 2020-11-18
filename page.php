@@ -10,9 +10,6 @@
                     <h2><?php echo get_the_title(); ?></h2>
                     <!-- <div class="category-item badge badge-primary"><a href="#">数学</a></div> -->
                 </div>
-                <div class="image">
-                <?php the_post_thumbnail('detail'); ?>
-                </div>
                 <?php 
                 if (have_posts()):
                     while(have_posts()):
@@ -56,71 +53,18 @@
               <div class="summary">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores amet praesentium quia inventore dignissimos incidunt iste ipsa unde sit quasi nobis itaque quas hic ipsum quos illo, maxime omnis sed?
               </div> -->
-              <div class="tags">
+              <!-- <div class="tags">
                   <ul>
                       <a href="#"><li><span><i class="fas fa-tag"></i></span>微分積分</li></a>
                       <a href="#"><li><span><i class="fas fa-tag"></i></span>高校数学</li></a>
                       <a href="#"><li><span><i class="fas fa-tag"></i></span>解析学</li></a>
                   </ul>
-              </div>
-              <div class="sns">
+              </div> -->
+              <!-- <div class="sns">
                 <div class="btn btn-primary">twitter</div>
                 <div class="btn btn-danger">google+</div>
-              </div>
+              </div> -->
             </div>
-            <!-- <div class="related">
-              <h1>関連記事</h1>
-              <div class="cards">
-                <div class="card">
-                  <img src="assets/img/CreditCard.jpg" alt="">
-                  <div class="card-body">
-                    <div class="card-text">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus...
-                    </div>
-                    <a href="#"><div class="btn btn-primary">記事を読む</div></a>
-                    <div class="category text-right">
-                      <div class="badge badge-primary">物理</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="assets/img/CreditCard.jpg" alt="">
-                  <div class="card-body">
-                    <div class="card-text">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus...
-                    </div>
-                    <a href="#"><div class="btn btn-primary">記事を読む</div></a>
-                    <div class="category text-right">
-                      <div class="badge badge-primary">物理</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="assets/img/CreditCard.jpg" alt="">
-                  <div class="card-body">
-                    <div class="card-text">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus...
-                    </div>
-                    <a href="#"><div class="btn btn-primary">記事を読む</div></a>
-                    <div class="category text-right">
-                      <div class="badge badge-primary">物理</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="assets/img/CreditCard.jpg" alt="">
-                  <div class="card-body">
-                    <div class="card-text">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus...
-                    </div>
-                    <a href="#"><div class="btn btn-primary">記事を読む</div></a>
-                    <div class="category text-right">
-                      <div class="badge badge-primary">物理</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> -->
         </div>
         <?php get_template_part('sidebar'); ?>
       </section>

@@ -42,6 +42,13 @@ header .headerCon form input {
 
 .conA .carousel-inner .accImg img {
   width: 100%;
+  height: auto;
+}
+
+.conA .carousel-inner .carousel-caption {
+  background: -webkit-gradient(linear, left top, left bottom, from(#b8b4b4), to(#000000));
+  background: linear-gradient(#b8b4b4, #000000);
+  opacity: 0.8;
 }
 
 .conB {
@@ -58,6 +65,7 @@ header .headerCon form input {
 .conB .cards img {
   display: block;
   width: 100%;
+  height: auto;
 }
 
 .conB .cards .topCardTitle {
@@ -191,18 +199,18 @@ header .headerCon form input {
   height: auto;
 }
 
-.conB .sidebars {
+.conB .sidebar-wrap {
   -webkit-box-flex: 3;
       -ms-flex: 3;
           flex: 3;
 }
 
-.conB .sidebars .prof-card {
+.conB .sidebar-wrap .sidebars .prof-card {
   border: 1px solid var(--primary);
   margin-bottom: 15px;
 }
 
-.conB .sidebars .prof-card .prof-wrap {
+.conB .sidebar-wrap .sidebars .prof-card .prof-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -215,22 +223,22 @@ header .headerCon form input {
           align-items: center;
 }
 
-.conB .sidebars .prof-card .prof-wrap .my-img {
+.conB .sidebar-wrap .sidebars .prof-card .prof-wrap .my-img {
   width: 100%;
   text-align: center;
 }
 
-.conB .sidebars .prof-card .prof-wrap .my-img img {
+.conB .sidebar-wrap .sidebars .prof-card .prof-wrap .my-img img {
   width: 30%;
   border-radius: 50%;
 }
 
-.conB .sidebars .card-popular {
+.conB .sidebar-wrap .sidebars .card-popular {
   border: 1px solid var(--primary);
   margin-bottom: 15px;
 }
 
-.conB .sidebars .card-popular .popular-title {
+.conB .sidebar-wrap .sidebars .card-popular .popular-title {
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -244,37 +252,37 @@ header .headerCon form input {
           align-items: center;
 }
 
-.conB .sidebars .card-popular .popular-title .titleLine {
+.conB .sidebar-wrap .sidebars .card-popular .popular-title .titleLine {
   border-bottom: 2px solid var(--primary);
   width: 70%;
 }
 
-.conB .sidebars .card-popular .card {
+.conB .sidebar-wrap .sidebars .card-popular .card {
   margin-bottom: 10px;
 }
 
-.conB .sidebars .card-popular .card img {
+.conB .sidebar-wrap .sidebars .card-popular .card img {
   display: block;
   width: 100%;
 }
 
-.conB .sidebars .card-popular .card .card-title {
+.conB .sidebar-wrap .sidebars .card-popular .card .card-title {
   margin-top: 5px;
 }
 
-.conB .sidebars .card-popular .card .card-text {
+.conB .sidebar-wrap .sidebars .card-popular .card .card-text {
   margin-bottom: 10px;
 }
 
-.conB .sidebars .card-popular .card .btn {
+.conB .sidebar-wrap .sidebars .card-popular .card .btn {
   margin-bottom: 5px;
 }
 
-.conB .sidebars .card-category {
+.conB .sidebar-wrap .sidebars .card-category {
   margin-bottom: 15px;
 }
 
-.conB .sidebars .card-category a {
+.conB .sidebar-wrap .sidebars .card-category a {
   color: var(--dark);
 }
 
@@ -411,7 +419,6 @@ header .headerCon form input {
 }
 
 .contents .mainWrap .mainContents .title {
-  text-align: center;
   margin-bottom: 10px;
 }
 
@@ -425,9 +432,13 @@ header .headerCon form input {
   margin: 0;
 }
 
-.contents .mainWrap .mainContents h1 {
+.contents .mainWrap .mainContents h1, .contents .mainWrap .mainContents h2, .contents .mainWrap .mainContents h3, .contents .mainWrap .mainContents h4 {
   padding: 5px 0 5px 10px;
   border-left: 5px solid var(--primary);
+}
+
+.contents .mainWrap .mainContents .prologue {
+  margin: 10px 0;
 }
 
 .contents .mainWrap .mainContents .image img {
@@ -438,6 +449,7 @@ header .headerCon form input {
 .contents .mainWrap .mainContents .index {
   padding: 15px;
   background-color: var(--light);
+  margin: 10px 0;
 }
 
 .contents .mainWrap .mainContents .blockquote {
@@ -448,6 +460,10 @@ header .headerCon form input {
 
 .contents .mainWrap .mainContents .blockquote .blockquote-footer {
   text-align: right;
+}
+
+.contents .mainWrap .mainContents .summary {
+  margin: 10px 0;
 }
 
 .contents .mainWrap .mainContents .tags {
@@ -474,6 +490,11 @@ header .headerCon form input {
 
 .contents .mainWrap .mainContents .sns .btn {
   padding-right: 10px;
+  color: white;
+}
+
+.contents .mainWrap .mainContents .sns .btn i {
+  margin-right: 5px;
 }
 
 .contents .mainWrap .mainContents .related {
@@ -618,6 +639,12 @@ header .headerCon form input {
 
 .sidebars .card-category ul li {
   margin-bottom: 5px;
+}
+
+.sidebars .card-popular .image img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .bread_crumb {

@@ -13,7 +13,7 @@ register_nav_menus(
 );
 
 add_theme_support('post-thumbnails');
-add_image_size('detail', 480, 255, true);
+add_image_size('detail', 640, 360, true);
 
 function pagination($pages, $paged, $range = 3, $show_only = false) 
 {
@@ -25,16 +25,16 @@ function pagination($pages, $paged, $range = 3, $show_only = false)
     $text_next = '次へ >';
     $text_last = '最後へ >>';
 
-    echo '<div class="page-wrap">';
     // 1ページのみで、ページを表示させるなら
     if ($show_only && $pages === 1) {
-        echo 1;
+        echo '<div class="page-wrap>1</div>';
         return;
     }
     if ($pages === 1) { // 表示させない
         return;
     }
-
+    
+    echo '<div class="page-wrap">';
     if ($pages != 1) { // ページ数が2ページ以上
         // echo $paged.'of'.$pages.'<br>';
         if ($paged > $range + 1) {
@@ -74,9 +74,47 @@ function cms_excerpt_more() // 入りきらない抜粋分は...にする
 add_filter('excerpt_more', 'cms_excerpt_more');
 function cms_excerpt_length() // 抜粋分最大文字数設定
 {
-    return 80;
+    return 40;
 }
 add_filter('excerpt_mblength', 'cms_excerpt_length');
 // 抜粋機能を有効化
 // add_post_type_support('single', 'excerpt');
 
+function theme_widgets_init() 
+{
+    register_sidebar(array(
+        'name' => '人気記事',
+        'id' => 'primary-widget-area',
+        'description' => '人気記事を出力',
+        'before_widget' => '',
+        'after_widget' => '',
+    ));
+}
+add_action('widgets_init', 'theme_widgets_init');
+
+function getPostViews($postID)
+{
+    $count_key = 'post_views_count';
+    $count = get_post_meta($postID, $count_key, true);
+    if ($count == '') {
+        delete_post_meta($postID, $count_key);
+        add_post_meta($postID, $count_key, '0');
+        return "0 View";
+    }
+    return $count.'Views';
+}
+
+function setPostViews($postID) 
+{
+    $count_key = 'post_views_count';
+    $count = get_post_meta($postID, $count_key, true);
+    if ($count == '') {
+        $count = 0;
+        delete_post_meta($countID, $count_key);
+        add_post_meta($postID, $count_key, '0');
+    } else {
+        $count++;
+        update_post_meta($postID, $count_key, $count);
+    }
+}
+remove_action('wp_head', 'adjacent_post_rel_link_wp_head', 10, 0);

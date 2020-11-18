@@ -39,8 +39,8 @@
                 <?php
                   $tags = get_the_tags();
                 ?>
-                <div class="btn btn-primary">twitter</div>
-                <div class="btn btn-danger">google+</div>
+                
+                <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="btn btn-primary" data-show-count="false"><i class="fab fa-twitter"></i>Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
               </div>
               <div class="np-tab">
                 <?php
