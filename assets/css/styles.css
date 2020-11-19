@@ -264,6 +264,7 @@ header .headerCon form input {
 .conB .sidebar-wrap .sidebars .card-popular .card img {
   display: block;
   width: 100%;
+  height: auto;
 }
 
 .conB .sidebar-wrap .sidebars .card-popular .card .card-title {

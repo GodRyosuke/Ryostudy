@@ -22,7 +22,7 @@
             <?php
               $args = array(
                 'post_type' => 'any',
-                'post__in' => array(31, 24, 38),
+                'post__in' => array(31, 36, 38),
               );
               $query = new WP_Query($args);
               if ($query->have_posts()):
@@ -59,7 +59,7 @@
             <div class="topCards">
             <?php
               $args = array(
-                'post__in' => array(60, 58, 56),
+                'post__in' => array(31, 36, 38),
               );
               $query = new WP_Query($args);
               if ($query->have_posts()):
