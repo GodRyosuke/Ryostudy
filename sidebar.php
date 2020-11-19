@@ -38,7 +38,7 @@
                   </div>
                   <div class="card-dody text-center">
                     <div class="card-title"><h4><?php the_title(); ?></h3></div>
-                    <div class="btn btn-primary">詳しくみる</div>
+                    <a href="<?php the_permalink(); ?>"><div class="btn btn-primary">詳しくみる</div></a>
                   </div>
                 </div>
                 <?php

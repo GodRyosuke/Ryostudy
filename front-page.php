@@ -13,7 +13,7 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="accImg">
-                  <a href="https://kakeibo.ryostudy.com"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/kakeibo3.jpg" alt=""></a>
+                  <a href="https://kakeibo.ryostudy.com"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/kakeibo2.jpg" alt=""></a>
                 </div>
                 <div class="carousel-caption">
                   <h3>無料の家計簿webアプリ!!</h3>
